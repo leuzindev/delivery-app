@@ -1,14 +1,15 @@
 import { View, Text } from "react-native";
 
 
+export function Home() {
 
-export function Home(){
-
-    return(
+    return (
 
         <View>
             <Text>Home</Text>
-            
+
         </View>
+
+
     )
 }

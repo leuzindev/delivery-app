@@ -1,10 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import {  Text, View } from 'react-native';
 import { Routes } from './src/routes';
+import { StatusBarModel } from './src/components/StatusBarModel';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 export default function App() {
   return (
-    <Routes/>
+    <SafeAreaProvider >
+      <StatusBarModel />
+      <Routes />
+    </SafeAreaProvider>
   );
 }
 
