@@ -20,7 +20,6 @@ export function Carrosel() {
                 width: 20,
                 transform: [{ scale: 1.2 }]
             }}
-            
         >
             <View className=' flex-1 items-center justify-start' >
                 <Image source={require('../assets/carrosel.png')} />
@@ -32,8 +31,5 @@ export function Carrosel() {
                 <Image source={require('../assets/carrosel.png')} />
             </View>
         </Swiper>
-
-
-
     )
 }
