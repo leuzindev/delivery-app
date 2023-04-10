@@ -2,12 +2,12 @@ import { View, Text } from "react-native";
 
 
 
-export function Register(){
+export function Like(){
 
     return(
 
         <View>
-            <Text>Register</Text>
+            <Text>Like</Text>
             
         </View>
     )
