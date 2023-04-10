@@ -9,7 +9,8 @@ import { Feed } from "../components/Feed";
 export function Home() {
 
     return (
-        <ScrollView className="">
+        
+        <ScrollView className="bg-white">
             <View className="bg-white flex-1 h-full w-screen items-center pt-4">
                 <View className=" w-10/12 ">
                     <View className=" flex-row justify-between items-center">
@@ -42,7 +43,9 @@ export function Home() {
                 <Categories />
                 <Feed />
               
+            
             </View>
+
         </ScrollView>
 
 

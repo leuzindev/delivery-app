@@ -58,6 +58,34 @@ export function Routes() {
 
                                 />
                                 <Tab.Screen
+                                    name="Carrinho"
+                                    component={Cart}
+                                    options={{
+                                        headerShown: false,
+                                        tabBarIcon: ({ color, size, focused }) => {
+                                            if (focused) {
+                                                return <Ionicons name="cart" size={size} color={color} />;
+                                            }
+                                            return <Ionicons name="cart-outline" size={size} color={color} />;
+                                        },
+                                    }}
+                                />
+
+                                <Tab.Screen
+                                    name="Pedido"
+                                    component={Order}
+                                    options={{
+                                        tabBarLabel: '',
+                                        headerShown: false,
+                                        tabBarIcon: ({ color, size, focused }) => (
+                                            <NewOrderButton size={size} color={color} focused={focused} />
+                                        )
+                                        ,
+                                    }}
+
+                                />
+
+                                <Tab.Screen
                                     name="Favoritos"
                                     component={Like}
                                     options={{
@@ -71,32 +99,7 @@ export function Routes() {
                                     }}
 
                                 />
-                                <Tab.Screen
-                                    name="Pedido"
-                                    component={Order}
-                                    options={{
-                                        tabBarLabel: '',
-                                        headerShown: false,
-                                        tabBarIcon: ({ color, size, focused }) => (
-                                            <NewOrderButton size={size} color={color} focused={focused}/>
-                                        )
-                                        ,
-                                    }}
 
-                                />
-                                <Tab.Screen
-                                    name="Carrinho"
-                                    component={Cart}
-                                    options={{
-                                        headerShown: false,
-                                        tabBarIcon: ({ color, size, focused }) => {
-                                            if (focused) {
-                                                return <Ionicons name="cart" size={size} color={color} />;
-                                            }
-                                            return <Ionicons name="cart-outline" size={size} color={color} />;
-                                        },
-                                    }}
-                                />
                                 <Tab.Screen
                                     name="Perfil"
                                     component={Profile}

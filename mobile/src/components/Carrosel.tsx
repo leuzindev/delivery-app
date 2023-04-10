@@ -22,13 +22,13 @@ export function Carrosel() {
             }}
         >
             <View className=' flex-1 items-center justify-start' >
-                <Image source={require('../assets/carrosel.png')} />
+                <Image source={require('../assets/carrosel1.png')} />
             </View>
             <View className=' flex-1 items-center justify-start'>
-                <Image source={require('../assets/carrosel.png')} />
+                <Image source={require('../assets/carrosel1.png')} />
             </View>
             <View className=' flex-1 items-center justify-start'>
-                <Image source={require('../assets/carrosel.png')} />
+                <Image source={require('../assets/carrosel1.png')} />
             </View>
         </Swiper>
     )
