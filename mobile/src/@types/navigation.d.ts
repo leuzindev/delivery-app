@@ -5,6 +5,7 @@ export declare global {
             Register: undefined;
             HomePage: undefined;
             Cards: undefined;
+            Pedido: undefined;
             
         }
     }

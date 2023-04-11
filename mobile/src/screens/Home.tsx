@@ -4,9 +4,12 @@ import { AntDesign } from '@expo/vector-icons';
 import { Carrosel } from "../components/Carrosel";
 import { Categories } from "../components/Categories";
 import { Feed } from "../components/Feed";
+import { useNavigation } from "@react-navigation/native";
 
 
 export function Home() {
+
+    const { navigate } = useNavigation()
 
     return (
         
@@ -33,7 +36,10 @@ export function Home() {
                         className="bg-gray-100 rounded-xl p-2 h-3/5 w-52 "
                         placeholder="Oque voce quer comer hoje?"
                     />
-                    <TouchableOpacity className="bg-orange rounded-xl p-2 w-1/3 h-3/5 items-center justify-center">
+                    <TouchableOpacity 
+                        onPress={() => navigate('Pedido')}
+                        className="bg-orange rounded-xl p-2 w-1/3 h-3/5 items-center justify-center"
+                    >
                         <Text className="text-white font-semibold">Fazer pedido</Text>
                     </TouchableOpacity>
                 </View>

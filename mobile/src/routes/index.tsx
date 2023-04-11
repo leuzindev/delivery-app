@@ -8,7 +8,7 @@ import { Home } from '../screens/Home';
 import { Profile } from '../screens/Profile';
 import { SafeScreen } from '../components/SafeScreen';
 import { Ionicons } from "@expo/vector-icons";
-import { Like } from '../screens/Like';
+import { Contacts } from '../screens/Contacts';
 import { Order } from '../screens/Order';
 import { NewOrderButton } from '../components/NewOrderButton';
 import { ContentRegistration } from '../screens/ContentRegistration';
@@ -75,6 +75,7 @@ export function Routes() {
 
                                 <Tab.Screen
                                     name="Pedido"
+
                                     component={Order}
                                     options={{
                                         tabBarLabel: '',
@@ -88,15 +89,15 @@ export function Routes() {
                                 />
 
                                 <Tab.Screen
-                                    name="Favoritos"
-                                    component={Like}
+                                    name="Contatos"
+                                    component={Contacts}
                                     options={{
                                         headerShown: false,
                                         tabBarIcon: ({ color, size, focused }) => {
                                             if (focused) {
-                                                return <Ionicons name="heart" size={size} color={color} />;
+                                                return <Ionicons name="location" size={size} color={color} />
                                             }
-                                            return <Ionicons name="heart-outline" size={size} color={color} />;
+                                            return <Ionicons name="location-outline"  size={size} color={color} />
                                         },
                                     }}
 
