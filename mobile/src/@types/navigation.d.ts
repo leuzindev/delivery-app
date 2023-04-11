@@ -4,6 +4,7 @@ export declare global {
             Login: undefined;
             Register: undefined;
             HomePage: undefined;
+            Cards: undefined;
             
         }
     }

@@ -5,6 +5,8 @@ import { MaterialIcons } from '@expo/vector-icons';
 
 export function Cart() {
 
+    
+
     return (
         <View className="bg-white h-full w-full">
 

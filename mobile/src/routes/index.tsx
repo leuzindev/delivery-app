@@ -12,6 +12,7 @@ import { Like } from '../screens/Like';
 import { Order } from '../screens/Order';
 import { NewOrderButton } from '../components/NewOrderButton';
 import { ContentRegistration } from '../screens/ContentRegistration';
+import { Cards } from '../screens/Cards';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -28,6 +29,7 @@ export function Routes() {
                     screenOptions={{ headerShown: false }}
                 >
                     <Stack.Screen name="Registration" component={ContentRegistration} />
+                    <Stack.Screen name="Cards" component={Cards} />
                     <Stack.Screen name="HomePage">
                         {() => (
                             <Tab.Navigator
