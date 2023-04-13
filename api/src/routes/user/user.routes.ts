@@ -10,4 +10,7 @@ router
     .put('/user/:id', UserController.UpdateUser)
     .delete('/user/:id', UserController.DeleteUser)
 
+    // Cart Routes
+    .get('/user/cart/:id/', UserController.getUserCart)
+
 export { router as UserRouter };
