@@ -9,7 +9,8 @@ class UserController {
     try {
       const users = await prisma.user.findMany({
         include: {
-          Card: true
+          Card: true,
+          Cart: true,
         }
       });
       return response.status(200).json(users);
